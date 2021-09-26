@@ -1,27 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import Teacher from '../Teacher/Teacher';
+import Cart from '../Cart/Cart';
 import './Teachers.css'
 
 const Teachers = () => {
     const [teachers, setTeachers] = useState([])
+    const [cart, setCart] = useState([])
     useEffect (() => {
         fetch('./teachers.json')
         .then(res => res.json())
         .then(data => setTeachers(data))
     },[])
+
+    const handleSelection = (teacher) => {
+        const newCount = [...cart,teacher]
+        setCart(newCount);
+    }
+
     return (
-        <div className = "main-section">
+        <div className = "main-section my-5">
             <div className = "teachers">
             
                 {
                     teachers.map(teacher => <Teacher
                         key = {teacher.ID}
                         teacher = {teacher}
+                        handleSelection ={handleSelection}
                     />)
                 }
             </div>
-            <div>
-                <h2>Selection</h2>
+            <div className = "container">
+                <Cart cart ={cart} />
+                
             </div>
         </div>
     );

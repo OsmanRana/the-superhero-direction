@@ -1,0 +1,10 @@
+.side-cart {
+    background-color: #94c295;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.side-cart-title {
+    color: white; 
+}
+#name {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
