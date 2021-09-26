@@ -1,6 +1,6 @@
 # Teacher Recruitement Plan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://vigilant-jones-792e6d.netlify.app/).
 
 ## Available Scripts
 
