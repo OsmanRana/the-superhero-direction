@@ -4,7 +4,7 @@ Please visit the live demo [https://vigilant-jones-792e6d.netlify.app/](https://
 
 ## Features
 
-With this APP you can do the following thins:
+With this APP you can do the following things:
 
 ### `Select Teachers`
 
@@ -16,7 +16,7 @@ Select the most desirable teacher from the list.
 You will never excede your budget
 
 ### `Recruite your desire Teacher`
-
+Finally.............
 Close the deal!!!!
 
 Thank you very much!!!
