@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
+    //Getting cart data
     const {cart} = props;
 
     let total = 0; 
@@ -12,6 +13,7 @@ const Cart = (props) => {
     }
     
     return (
+        //Display cart data
         <div>
                 <div className = "card border-0 py-5 shadow">
                     <h5 className ="text-success">SELECTED TEACHER</h5>

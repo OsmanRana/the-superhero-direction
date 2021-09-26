@@ -4,6 +4,7 @@ import Cart from '../Cart/Cart';
 import './Teachers.css'
 
 const Teachers = () => {
+    //Loding data
     const [teachers, setTeachers] = useState([])
     const [cart, setCart] = useState([])
     useEffect (() => {
@@ -12,6 +13,7 @@ const Teachers = () => {
         .then(data => setTeachers(data))
     },[])
 
+    // Button event handler
     const handleSelection = (teacher) => {
         const newCount = [...cart,teacher]
         setCart(newCount);
