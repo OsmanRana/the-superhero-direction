@@ -12,13 +12,15 @@ const Cart = (props) => {
     }
     
     return (
-        <div className = "card side-cart border-0">
-                <div className = "my-5">
-                    <h5 className ="side-cart-title">SELECTED TEACHER</h5>
-                    <small>Teachers Selected:</small><h3 className ="side-cart-title">{cart.length} </h3>
-                    <small>Total Salary:</small><h3 className ="side-cart-title">TK. {total} </h3>
-                    <p>Name of Selected Teacher:</p>
-                    <h2 id="name" className ="side-cart-title">{name}</h2>
+        <div>
+                <div className = "card border-0 py-5 shadow">
+                    <h5 className ="text-success">SELECTED TEACHER</h5>
+                    <p className = "fw-bold ">Teachers Selected:</p><h3 className ="text-success">{cart.length} </h3>
+                    <p className = "fw-bold ">Total Salary:</p><h3 className ="text-success">TK. {total} </h3>
+                </div>
+                <div className ="my-3 card border-0 py-5 shadow">
+                    <p className = "fw-bold ">Name of Selected Teacher:</p>
+                    <h5 id="name" className ="text-success px-5">{name}</h5>
                 </div>
         </div>
     );
